@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="./docs/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
@@ -21,13 +21,13 @@
     <!-- Diskon end -->
 
     <!-- Header Start -->
-    <?php include "../includes/header.php" ?>
+    <?php include "./includes/header.php" ?>
     <!-- Header End -->
 
     <!-- Slider Start -->
     <section class="relative overflow-hidden h-screen">
         <div class="slider">
-            <div class=" slide bg-cover bg-right lg:bg-center h-screen" style="background-image: url('../images/banner-1.png');">
+            <div class=" slide bg-cover bg-right lg:bg-center h-screen" style="background-image: url('./images/banner-1.png');">
                 <div class="bg-black/20 lg:bg-transparent h-full flex items-center justify-center">
                     <div class="relative w-full text-center">
                         <h3 class="md:hidden block text-4xl font-bold text-slate-100">Shofi Frozen</h3>
@@ -36,7 +36,7 @@
                     </div>
                 </div>
             </div>
-            <div class="slide bg-cover bg-right lg:bg-center h-screen" style="background-image: url('../images//banner-2.png');">
+            <div class="slide bg-cover bg-right lg:bg-center h-screen" style="background-image: url('./images//banner-2.png');">
                 <div class="bg-black/20 lg:bg-transparent h-full flex items-center justify-center">
                     <div class="relative w-full text-center">
                         <h3 class="md:hidden block text-4xl font-bold text-slate-100">Shofi Frozen</h3>
@@ -45,7 +45,7 @@
                     </div>
                 </div>
             </div>
-            <div class="slide bg-cover bg-right lg:bg-center h-screen" style="background-image: url('../images/banner-3.png');">
+            <div class="slide bg-cover bg-right lg:bg-center h-screen" style="background-image: url('./images/banner-3.png');">
                 <div class="bg-black/20 lg:bg-transparent h-full flex items-center justify-center">
                     <div class="relative w-full text-center">
                         <h3 class="md:hidden block text-4xl font-bold text-slate-100">Shofi Frozen</h3>
@@ -54,7 +54,7 @@
                     </div>
                 </div>
             </div>
-            <div class="slide bg-cover bg-right lg:bg-center h-screen" style="background-image: url('../images/banner-4.png');">
+            <div class="slide bg-cover bg-right lg:bg-center h-screen" style="background-image: url('./images/banner-4.png');">
                 <div class="bg-black/20 lg:bg-transparent h-full flex items-center justify-center">
                     <div class="relative w-full text-center">
                         <h3 class="md:hidden block text-4xl font-bold text-slate-100">Shofi Frozen</h3>
@@ -92,7 +92,7 @@
             <div class="flex flex-wrap mb-5">
                 <div class=" w-1/2 lg:w-1/5 px-2">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
-                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
@@ -102,7 +102,7 @@
                 </div>
                 <div class=" w-1/2 lg:w-1/5 px-2">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
-                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
@@ -112,7 +112,7 @@
                 </div>
                 <div class=" w-1/2 lg:w-1/5 px-2">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
-                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
@@ -122,7 +122,7 @@
                 </div>
                 <div class=" w-1/2 lg:w-1/5 px-2">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
-                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
@@ -132,7 +132,7 @@
                 </div>
                 <div class=" w-1/2 lg:w-1/5 px-2">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
-                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
@@ -142,7 +142,7 @@
                 </div>
                 <div class=" w-1/2 lg:w-1/5 px-2">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
-                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
@@ -152,7 +152,7 @@
                 </div>
                 <div class=" w-1/2 lg:w-1/5 px-2">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
-                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
@@ -162,7 +162,7 @@
                 </div>
                 <div class=" w-1/2 lg:w-1/5 px-2">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
-                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
@@ -172,7 +172,7 @@
                 </div>
                 <div class=" w-1/2 lg:w-1/5 px-2">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
-                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
@@ -182,7 +182,7 @@
                 </div>
                 <div class=" w-1/2 lg:w-1/5 px-2">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
-                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
@@ -241,7 +241,7 @@
             <div class="flex flex-wrap mb-5">
                 <div class=" w-1/2 lg:w-1/5 px-2">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
-                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
@@ -251,7 +251,7 @@
                 </div>
                 <div class=" w-1/2 lg:w-1/5 px-2">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
-                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
@@ -261,7 +261,7 @@
                 </div>
                 <div class=" w-1/2 lg:w-1/5 px-2">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
-                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
@@ -271,7 +271,7 @@
                 </div>
                 <div class=" w-1/2 lg:w-1/5 px-2">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
-                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
@@ -281,7 +281,7 @@
                 </div>
                 <div class=" w-1/2 lg:w-1/5 px-2">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
-                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
@@ -291,7 +291,7 @@
                 </div>
                 <div class=" w-1/2 lg:w-1/5 px-2">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
-                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
@@ -301,7 +301,7 @@
                 </div>
                 <div class=" w-1/2 lg:w-1/5 px-2">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
-                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
@@ -311,7 +311,7 @@
                 </div>
                 <div class=" w-1/2 lg:w-1/5 px-2">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
-                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
@@ -321,7 +321,7 @@
                 </div>
                 <div class=" w-1/2 lg:w-1/5 px-2">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
-                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
@@ -331,7 +331,7 @@
                 </div>
                 <div class=" w-1/2 lg:w-1/5 px-2">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
-                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
@@ -360,10 +360,10 @@
             </div>
             <div class="w-full flex flex-warp gap-5 px-20 mb-10">
                 <div class="w-[60%]">
-                    <img src="../images/blog-1.jpg" alt="" class="w-full">
+                    <img src="./images/blog-1.jpg" alt="" class="w-full">
                 </div>
                 <div class="w-[40.8%]">
-                    <img src="../images/hammad-bgRagunan-new.jpeg.jpg" alt="" class="w-full">
+                    <img src="./images/hammad-bgRagunan-new.jpeg.jpg" alt="" class="w-full">
                 </div>
             </div>
             <div class="w-full mb-10">
@@ -390,7 +390,7 @@
             <div class="w-full flex px-5 gap-5">
                 <div class="w-1/5 bg-amber-100 relative rounded-2xl pt-18 shadow-lg hover:transform hover:transition hover:-translate-y-2 hover:duration-200 hover:ease-in-out pb-5 px-4">
                     <div class="w-30 absolute -top-15 left-1/2 -translate-x-1/2 rounded-full border-10 border-amber-100">
-                        <img src="../images/Hammad-min.png" alt="" class="w-full rounded-full">
+                        <img src="./images/Hammad-min.png" alt="" class="w-full rounded-full">
                     </div>
                     <div class="w-full flex justify-center text-yellow-400 text-2xl mb-3">
                         <i class="fa-solid fa-star"></i>
@@ -406,7 +406,7 @@
                 </div>
                 <div class="w-1/5 bg-amber-100 relative rounded-2xl pt-18 shadow-lg hover:transform hover:transition hover:-translate-y-2 hover:duration-200 hover:ease-in-out pb-5 px-4">
                     <div class="w-30 absolute -top-15 left-1/2 -translate-x-1/2 rounded-full border-10 border-amber-100">
-                        <img src="../images/Hammad-min.png" alt="" class="w-full rounded-full">
+                        <img src="./images/Hammad-min.png" alt="" class="w-full rounded-full">
                     </div>
                     <div class="w-full flex justify-center text-yellow-400 text-2xl mb-3">
                         <i class="fa-solid fa-star"></i>
@@ -422,7 +422,7 @@
                 </div>
                 <div class="w-1/5 bg-amber-100 relative rounded-2xl pt-18 shadow-lg hover:transform hover:transition hover:-translate-y-2 hover:duration-200 hover:ease-in-out pb-5 px-4">
                     <div class="w-30 absolute -top-15 left-1/2 -translate-x-1/2 rounded-full border-10 border-amber-100">
-                        <img src="../images/Hammad-min.png" alt="" class="w-full rounded-full">
+                        <img src="./images/Hammad-min.png" alt="" class="w-full rounded-full">
                     </div>
                     <div class="w-full flex justify-center text-yellow-400 text-2xl mb-3">
                         <i class="fa-solid fa-star"></i>
@@ -438,7 +438,7 @@
                 </div>
                 <div class="w-1/5 bg-amber-100 relative rounded-2xl pt-18 shadow-lg hover:transform hover:transition hover:-translate-y-2 hover:duration-200 hover:ease-in-out pb-5 px-4">
                     <div class="w-30 absolute -top-15 left-1/2 -translate-x-1/2 rounded-full border-10 border-amber-100">
-                        <img src="../images/Hammad-min.png" alt="" class="w-full rounded-full">
+                        <img src="./images/Hammad-min.png" alt="" class="w-full rounded-full">
                     </div>
                     <div class="w-full flex justify-center text-yellow-400 text-2xl mb-3">
                         <i class="fa-solid fa-star"></i>
@@ -513,10 +513,10 @@
     <!-- Contact & Location Page End -->
 
     <!-- Footer Start -->
-    <?php include "../includes/footer.php" ?>
+    <?php include "./includes/footer.php" ?>
     <!-- Footer End -->
 
-    <script src="script.js"></script>
+    <script src="./docs/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script>
