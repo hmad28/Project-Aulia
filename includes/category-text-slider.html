@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category - Text Slider</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="flex items-center space-x-4 bg-white shadow-md p-4 rounded-md">
+        <div id="carousel" class="flex space-x-4 overflow-hidden w-80"></div>
+        <button id="nextBtn" class="text-gray-600 hover:text-black">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </button>
+    </div>
+    <script>
+        const categories = [
+            "Apple", "Samsung", "Oppo", "Xiaomi", "Huawei", "Motorola", "Realme", "Vivo"
+        ];
+
+        let startIndex = 0;
+        const visibleCount = 5;
+
+        const carousel = document.getElementById("carousel");
+        const nextBtn = document.getElementById("nextBtn");
+
+        function renderCarousel() {
+            carousel.innerHTML = "";
+            const endIndex = startIndex + visibleCount;
+            const visibleItems = categories.slice(startIndex, endIndex);
+
+            visibleItems.forEach(cat => {
+                const link = document.createElement("a");
+                link.href = "#";
+                link.className = "px-3 py-1 bg-blue-100 text-blue-700 rounded-md hover:bg-blue-200";
+                link.textContent = cat;
+                carousel.appendChild(link);
+            });
+        }
+
+        nextBtn.addEventListener("click", () => {
+            startIndex = (startIndex + 1) % categories.length;
+
+            if (startIndex + visibleCount > categories.length) {
+                startIndex = 0;
+            }
+            
+            renderCarousel();
+        });
+
+        renderCarousel();
+    </script>
+</body>
+</html>

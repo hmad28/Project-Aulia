@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Category - Hover</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown:hover .icon-right {
+            display: none;
+        }
+        .dropdown:hover .icon-down {
+            display: inline;
+        }
+        .icon-down {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="relative dropdown">
+        <button class="flex items-center justify-between bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 w-48">
+            <span>Pilih Kategori</span>
+            <svg class="icon-right w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+            <svg class="icon-down w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+        </button>
+        <ul class="dropdown-menu absolute hidden bg-white border mt-2 rounded-md shadow-md w-48 z-10">
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Teknologi</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Pendidikan</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Kesehatan</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Olahraga</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Keuangan</a></li>
+        </ul>
+    </div>
+</body>
+</html>
