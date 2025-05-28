@@ -46,11 +46,13 @@ document.addEventListener("click", function (e) {
 
 // slider text start
 const categories = [
-            "Apple", "Samsung", "Oppo", "Xiaomi", "Huawei", "Motorola", "Realme", "Vivo", "Apple", "Samsung", "Oppo", "Xiaomi", "Huawei", "Motorola", "Realme", "Vivo"
+            "Apple", "Samsung", "Oppo", "Xiaomi", "Huawei", "Motorola", "Realme", "Vivo", 
+            "Apple", "Samsung", "Oppo", "Xiaomi", "Huawei", "Motorola", "Realme", "Vivo", 
+            "Apple", "Samsung", "Oppo", "Xiaomi", "Huawei", "Motorola", "Realme", "Vivo"
         ];
 
         let startIndex = 0;
-        const visibleCount = 12;
+        const visibleCount = 20;
 
         const carousel = document.getElementById("carousel");
         const nextBtn = document.getElementById("nextBtn");
