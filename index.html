@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aulia Bakery</title>
     <link rel="stylesheet" href="./docs/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
     <!-- Diskon start -->
@@ -25,7 +30,7 @@
         <div class="container mx-auto">
             <div class="flex items-center justify-between relative">
                 <div class="px-4 lg:px-15 ">
-                    <a href="#home" class="font-bold text-2xl text-yellow-800/70 block py-6">Aulia Bakery</a>
+                    <a href="#" class="font-bold text-2xl text-yellow-800/70 block py-6">Aulia Bakery</a>
                 </div>
                 <div class="relative ">
                     <input type="text" class="py-2 pl-8 pr-5 rounded-lg bg-slate-200" placeholder="Search ...">
@@ -41,22 +46,22 @@
                     <nav id="nav-menu" class="hidden absolute py-5 text-yellow-800/70 shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:right-20 lg:block lg:static md:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
                         <ul class="block lg:flex">
                             <li class="group">
-                                <a href="#home" class="text-base text-yellow-800/70 py-2 mx-8 flex group-hover:text-violet-500">Best Seller</a>
+                                <a href="#best-seller" class="text-base text-yellow-800/70 py-1 px-2 mx-6 flex group-hover:text-amber-100 group-hover:bg-yellow-700/80 rounded-2xl duration-200">Best Seller</a>
                             </li>
                             <li class="group">
-                                <a href="#about" class="text-base text-yellow-800/70 py-2 mx-8 flex group-hover:text-violet-500">Our Products</a>
+                                <a href="#products" class="text-base text-yellow-800/70 py-1 px-2 mx-6 flex group-hover:text-amber-100 group-hover:bg-yellow-700/80 rounded-2xl duration-200">Our Products</a>
                             </li>
                             <li class="group">
-                                <a href="#contact" class="text-base text-yellow-800/70 py-2 mx-8 flex group-hover:text-violet-500">About Us</a>
+                                <a href="#about" class="text-base text-yellow-800/70 py-1 px-2 mx-6 flex group-hover:text-amber-100 group-hover:bg-yellow-700/80 rounded-2xl duration-200">About Us</a>
                             </li>
                             <li class="group">
-                                <a href="#contact" class="text-base text-yellow-800/70 py-2 mx-8 flex group-hover:text-violet-500">Testimonials</a>
+                                <a href="#testimonials" class="text-base text-yellow-800/70 py-1 px-2 mx-6 flex group-hover:text-amber-100 group-hover:bg-yellow-700/80 rounded-2xl duration-200">Testimonials</a>
                             </li>
                             <li class="group">
-                                <a href="#contact" class="text-base text-yellow-800/70 py-2 mx-8 flex group-hover:text-violet-500">FAQ</a>
+                                <a href="#faq" class="text-base text-yellow-800/70 py-1 px-2 mx-6 flex group-hover:text-amber-100 group-hover:bg-yellow-700/80 rounded-2xl duration-200">FAQ</a>
                             </li>
                             <li class="group">
-                                <a href="#contact" class="text-base text-yellow-800/70 py-2 mx-8 flex group-hover:text-violet-500">Contact & Location</a>
+                                <a href="#contact" class="text-base text-yellow-800/70 py-1 px-2 mx-6 flex group-hover:text-amber-100 group-hover:bg-yellow-700/80 rounded-2xl duration-200">Contact & Location</a>
                             </li>
                         </ul>
                     </nav>
@@ -69,7 +74,7 @@
     <!-- Slider Start -->
     <section class="relative overflow-hidden h-screen">
         <div class="slider">
-            <div class=" slide bg-cover bg-right lg:bg-center h-screen" style="background-image: url('./images/banner-1.png');">
+            <div class=" slide bg-cover bg-right lg:bg-center h-screen" style="background-image: url('./images/banner-2.png');">
                 <div class="bg-black/20 lg:bg-transparent h-full flex items-center justify-center">
                     <div class="relative w-full text-center">
                         <h3 class="md:hidden block text-4xl font-bold text-slate-100">Shofi Frozen</h3>
@@ -78,7 +83,7 @@
                     </div>
                 </div>
             </div>
-            <div class="slide bg-cover bg-right lg:bg-center h-screen" style="background-image: url('./images//banner-2.png');">
+            <div class="slide bg-cover bg-right lg:bg-center h-screen" style="background-image: url('./images//banner-4.png');">
                 <div class="bg-black/20 lg:bg-transparent h-full flex items-center justify-center">
                     <div class="relative w-full text-center">
                         <h3 class="md:hidden block text-4xl font-bold text-slate-100">Shofi Frozen</h3>
@@ -87,7 +92,7 @@
                     </div>
                 </div>
             </div>
-            <div class="slide bg-cover bg-right lg:bg-center h-screen" style="background-image: url('./images/banner-3.png');">
+            <div class="slide bg-cover bg-right lg:bg-center h-screen" style="background-image: url('./images/banner-1.png');">
                 <div class="bg-black/20 lg:bg-transparent h-full flex items-center justify-center">
                     <div class="relative w-full text-center">
                         <h3 class="md:hidden block text-4xl font-bold text-slate-100">Shofi Frozen</h3>
@@ -96,7 +101,7 @@
                     </div>
                 </div>
             </div>
-            <div class="slide bg-cover bg-right lg:bg-center h-screen" style="background-image: url('./images/banner-4.png');">
+            <div class="slide bg-cover bg-right lg:bg-center h-screen" style="background-image: url('./images/banner-3.png');">
                 <div class="bg-black/20 lg:bg-transparent h-full flex items-center justify-center">
                     <div class="relative w-full text-center">
                         <h3 class="md:hidden block text-4xl font-bold text-slate-100">Shofi Frozen</h3>
@@ -125,117 +130,117 @@
     <!-- Slider End -->
 
     <!-- Best Seller Page Start -->
-    <section id="home" class="pt-20 pb-16 px-4 sm:px-40">
+    <section id="best-seller" class="pt-20 pb-16 px-4 sm:px-40">
         <div class="container mx-auto">
             <div class="w-full px-4 text-center pb-10 relative">
                 <span class="bg-yellow-800/70 h-[1px] px-[230px] absolute left-0 top-6"></span>
                 <h1 class="text-4xl text-yellow-800/70 font-bold lg:text-5xl">Best Seller</h1>
             </div>
             <div class="flex flex-wrap mb-5">
-                <div class=" w-1/2 lg:w-1/5 px-2">
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='./includes/product-detail.html'" style="cursor: pointer;">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
                         <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
-                            <a href="https://wa.me/+6289680719665?text=Shofi Frozen, saya mau beli Nugget Kanzler 450gr!" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
                         </div>
                     </div>
                 </div>
-                <div class=" w-1/2 lg:w-1/5 px-2">
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='./includes/product-detail.html'" style="cursor: pointer;">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
                         <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
-                            <a href="https://wa.me/+6289680719665?text=Shofi Frozen, saya mau beli Nugget Kanzler 450gr!" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
                         </div>
                     </div>
                 </div>
-                <div class=" w-1/2 lg:w-1/5 px-2">
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='./includes/product-detail.html'" style="cursor: pointer;">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
                         <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
-                            <a href="https://wa.me/+6289680719665?text=Shofi Frozen, saya mau beli Nugget Kanzler 450gr!" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
                         </div>
                     </div>
                 </div>
-                <div class=" w-1/2 lg:w-1/5 px-2">
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='./includes/product-detail.html'" style="cursor: pointer;">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
                         <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
-                            <a href="https://wa.me/+6289680719665?text=Shofi Frozen, saya mau beli Nugget Kanzler 450gr!" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
                         </div>
                     </div>
                 </div>
-                <div class=" w-1/2 lg:w-1/5 px-2">
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='./includes/product-detail.html'" style="cursor: pointer;">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
                         <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
-                            <a href="https://wa.me/+6289680719665?text=Shofi Frozen, saya mau beli Nugget Kanzler 450gr!" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
                         </div>
                     </div>
                 </div>
-                <div class=" w-1/2 lg:w-1/5 px-2">
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='./includes/product-detail.html'" style="cursor: pointer;">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
                         <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
-                            <a href="https://wa.me/+6289680719665?text=Shofi Frozen, saya mau beli Nugget Kanzler 450gr!" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
                         </div>
                     </div>
                 </div>
-                <div class=" w-1/2 lg:w-1/5 px-2">
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='./includes/product-detail.html'" style="cursor: pointer;">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
                         <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
-                            <a href="https://wa.me/+6289680719665?text=Shofi Frozen, saya mau beli Nugget Kanzler 450gr!" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
                         </div>
                     </div>
                 </div>
-                <div class=" w-1/2 lg:w-1/5 px-2">
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='./includes/product-detail.html'" style="cursor: pointer;">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
                         <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
-                            <a href="https://wa.me/+6289680719665?text=Shofi Frozen, saya mau beli Nugget Kanzler 450gr!" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
                         </div>
                     </div>
                 </div>
-                <div class=" w-1/2 lg:w-1/5 px-2">
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='./includes/product-detail.html'" style="cursor: pointer;">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
                         <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
-                            <a href="https://wa.me/+6289680719665?text=Shofi Frozen, saya mau beli Nugget Kanzler 450gr!" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
                         </div>
                     </div>
                 </div>
-                <div class=" w-1/2 lg:w-1/5 px-2">
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='./includes/product-detail.html'" style="cursor: pointer;">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
                         <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
-                            <a href="https://wa.me/+6289680719665?text=Shofi Frozen, saya mau beli Nugget Kanzler 450gr!" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="w-full flex justify-center">
                 <button class="py-2 px-5 rounded-4xl bg-amber-100 hover:bg-yellow-800/70 hover:text-amber-100 duration-200">
-                    <a href="best-seller.php" class="flex gap-3 items-center">
+                    <a href="./includes/best-seller.html" class="flex gap-3 items-center">
                         See More <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </button>
@@ -281,110 +286,110 @@
                 </div>
             </div>
             <div class="flex flex-wrap mb-5">
-                <div class=" w-1/2 lg:w-1/5 px-2">
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='./includes/product-detail.html'" style="cursor: pointer;">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
                         <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
-                            <a href="https://wa.me/+6289680719665?text=Shofi Frozen, saya mau beli Nugget Kanzler 450gr!" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
                         </div>
                     </div>
                 </div>
-                <div class=" w-1/2 lg:w-1/5 px-2">
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='./includes/product-detail.html'" style="cursor: pointer;">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
                         <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
-                            <a href="https://wa.me/+6289680719665?text=Shofi Frozen, saya mau beli Nugget Kanzler 450gr!" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
                         </div>
                     </div>
                 </div>
-                <div class=" w-1/2 lg:w-1/5 px-2">
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='./includes/product-detail.html'" style="cursor: pointer;">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
                         <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
-                            <a href="https://wa.me/+6289680719665?text=Shofi Frozen, saya mau beli Nugget Kanzler 450gr!" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
                         </div>
                     </div>
                 </div>
-                <div class=" w-1/2 lg:w-1/5 px-2">
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='./includes/product-detail.html'" style="cursor: pointer;">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
                         <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
-                            <a href="https://wa.me/+6289680719665?text=Shofi Frozen, saya mau beli Nugget Kanzler 450gr!" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
                         </div>
                     </div>
                 </div>
-                <div class=" w-1/2 lg:w-1/5 px-2">
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='./includes/product-detail.html'" style="cursor: pointer;">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
                         <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
-                            <a href="https://wa.me/+6289680719665?text=Shofi Frozen, saya mau beli Nugget Kanzler 450gr!" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
                         </div>
                     </div>
                 </div>
-                <div class=" w-1/2 lg:w-1/5 px-2">
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='./includes/product-detail.html'" style="cursor: pointer;">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
                         <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
-                            <a href="https://wa.me/+6289680719665?text=Shofi Frozen, saya mau beli Nugget Kanzler 450gr!" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
                         </div>
                     </div>
                 </div>
-                <div class=" w-1/2 lg:w-1/5 px-2">
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='./includes/product-detail.html'" style="cursor: pointer;">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
                         <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
-                            <a href="https://wa.me/+6289680719665?text=Shofi Frozen, saya mau beli Nugget Kanzler 450gr!" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
                         </div>
                     </div>
                 </div>
-                <div class=" w-1/2 lg:w-1/5 px-2">
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='./includes/product-detail.html'" style="cursor: pointer;">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
                         <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
-                            <a href="https://wa.me/+6289680719665?text=Shofi Frozen, saya mau beli Nugget Kanzler 450gr!" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
                         </div>
                     </div>
                 </div>
-                <div class=" w-1/2 lg:w-1/5 px-2">
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='./includes/product-detail.html'" style="cursor: pointer;">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
                         <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
-                            <a href="https://wa.me/+6289680719665?text=Shofi Frozen, saya mau beli Nugget Kanzler 450gr!" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
                         </div>
                     </div>
                 </div>
-                <div class=" w-1/2 lg:w-1/5 px-2">
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='./includes/product-detail.html'" style="cursor: pointer;">
                     <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
                         <img src="./images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
                         <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
                         <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
                         <div class="w-full flex">
-                            <a href="https://wa.me/+6289680719665?text=Shofi Frozen, saya mau beli Nugget Kanzler 450gr!" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="w-full flex justify-center">
                 <button class="py-2 px-5 rounded-4xl bg-amber-100 hover:bg-yellow-800/70 hover:text-amber-100 duration-200">
-                    <a href="best-seller.php" class="flex gap-3 items-center">
+                    <a href="./includes/our-products.html" class="flex gap-3 items-center">
                         See More <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </button>
@@ -401,11 +406,11 @@
                 <h1 class="text-4xl text-amber-100 font-bold lg:text-5xl">About Us</h1>
             </div>
             <div class="w-full flex flex-warp gap-5 px-20 mb-10">
-                <div class="w-[60%]">
-                    <img src="./images/blog-1.jpg" alt="" class="w-full">
+                <div class="w-[50%]">
+                    <img src="./images/bread15.jpeg" alt="" class="w-full rounded-2xl">
                 </div>
-                <div class="w-[40.8%]">
-                    <img src="./images/hammad-bgRagunan-new.jpeg.jpg" alt="" class="w-full">
+                <div class="w-[41%]">
+                    <img src="./images/bread1.jpeg" alt="" class="w-full rounded-2xl">
                 </div>
             </div>
             <div class="w-full mb-10">
@@ -413,7 +418,7 @@
             </div>
             <div class="w-full flex justify-center">
                 <button class="py-2 px-5 rounded-4xl bg-amber-100 hover:bg-yellow-800/70 hover:text-amber-100 duration-200">
-                    <a href="best-seller.php" class="flex gap-3 items-center">
+                    <a href="./includes/about-us.html" class="flex gap-3 items-center">
                         See More <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </button>
@@ -495,7 +500,7 @@
                     </p>
                 </div>
                 <div class="w-1/5 flex justify-center">
-                    <i class="fa-solid fa-arrow-right bg-amber-100 p-3 rounded-full text-yellow-800/70"></i>
+                    <a href="./includes/testimonials.html"><i class="fa-solid fa-arrow-right bg-amber-100 p-3 rounded-full text-yellow-800/70"></i></a>
                 </div>
             </div>
         </div>
@@ -543,7 +548,7 @@
             </div>
             <div class="w-full flex justify-center">
                 <button class="py-2 px-5 rounded-4xl bg-amber-100 hover:bg-yellow-800/70 hover:text-amber-100 duration-200">
-                    <a href="best-seller.php" class="flex gap-3 items-center">
+                    <a href="./includes/faq.html" class="flex gap-3 items-center">
                         See More <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </button>
@@ -553,7 +558,7 @@
     <!-- FAQ Page End -->
 
     <!-- Contact & Location Page Start -->
-    <section id="testimonials" class="pt-20 pb-16 px-4 sm:px-40">
+    <section id="contact" class="pt-20 pb-16 px-4 sm:px-40">
         <div class="container mx-auto">
             <div class="w-full px-4 text-center pb-5 relative">
                 <span class="bg-yellow-800/70 h-[1px] px-[170px] absolute left-0 top-6"></span>
@@ -644,7 +649,7 @@
                 </div>
                 <div class="w-full flex justify-center">
                     <button class="py-2 px-5 rounded-4xl bg-amber-100 hover:bg-yellow-800/70 hover:text-amber-100 duration-200">
-                        <a href="best-seller.php" class="flex gap-3 items-center">
+                        <a href="./includes/contact-and-location.html" class="flex gap-3 items-center">
                             See More <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </button>
@@ -667,12 +672,12 @@
                 <div class="w-full px-4 mb-12 md:w-1/3 lg:mb-15">
                     <h3 class="font-semibold text-xl text-white mb-5">Links</h3>
                     <ul class="text-slate-300">
-                        <li><a href="#home" class="inline-block text-base hover:text-violet-500 mb-2 lg:text-sm">Best Seller</a></li>
-                        <li><a href="#about" class="inline-block text-base hover:text-violet-500 mb-2 lg:text-sm">Our Products</a></li>
-                        <li><a href="#contact" class="inline-block text-base hover:text-violet-500 mb-2 lg:text-sm">About Us</a></li>
-                        <li><a href="#contact" class="inline-block text-base hover:text-violet-500 mb-2 lg:text-sm">Testimonials</a></li>
-                        <li><a href="#contact" class="inline-block text-base hover:text-violet-500 mb-2 lg:text-sm">FAQ</a></li>
-                        <li><a href="#contact" class="inline-block text-base hover:text-violet-500 mb-2 lg:text-sm">Contact & Location</a></li>
+                        <li><a href="#best-seller" class="inline-block text-base hover:text-amber-100 mb-2 lg:text-sm">Best Seller</a></li>
+                        <li><a href="#products" class="inline-block text-base hover:text-amber-100 mb-2 lg:text-sm">Our Products</a></li>
+                        <li><a href="#about" class="inline-block text-base hover:text-amber-100 mb-2 lg:text-sm">About Us</a></li>
+                        <li><a href="#testimonials" class="inline-block text-base hover:text-amber-100 mb-2 lg:text-sm">Testimonials</a></li>
+                        <li><a href="#faq" class="inline-block text-base hover:text-amber-100 mb-2 lg:text-sm">FAQ</a></li>
+                        <li><a href="#contact" class="inline-block text-base hover:text-amber-100 mb-2 lg:text-sm">Contact & Location</a></li>
                     </ul>
                 </div>
                 <div class="w-full px-4 mb-12 md:w-1/3 lg:mb-2">

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../docs/output.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <!-- Header Start -->
+    <header class="bg-amber-100 absolute left-0 w-full flex items-center z-10">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4 lg:px-15 ">
+                    <a href="../index.html" class="font-bold text-2xl text-yellow-800/70 block py-6">Aulia Bakery</a>
+                </div>
+                <div class="relative ">
+                    <input type="text" class="py-2 pl-8 pr-5 rounded-lg bg-slate-200" placeholder="Search ...">
+                    <i class="fa-solid fa-magnifying-glass absolute left-2 top-3 text-slate-500"></i>
+                </div>
+                <div class="flex items-center px-4 lg:px-15 ">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute top-4 right-4 lg:hidden lg:right-20 ">
+                        <span class="hamburger-line  transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line  transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line  transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu" class="hidden absolute py-5 text-yellow-800/70 shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:right-20 lg:block lg:static md:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="./best-seller.html" class="text-base text-yellow-800/70 py-1 px-2 mx-6 flex group-hover:text-amber-100 group-hover:bg-yellow-700/80 rounded-2xl duration-200">Best Seller</a>
+                            </li>
+                            <li class="group">
+                                <a href="./our-products.html" class="text-base text-yellow-800/70 py-1 px-2 mx-6 flex group-hover:text-amber-100 group-hover:bg-yellow-700/80 rounded-2xl duration-200">Our Products</a>
+                            </li>
+                            <li class="group">
+                                <a href="./about-us.html" class="text-base text-yellow-800/70 py-1 px-2 mx-6 flex group-hover:text-amber-100 group-hover:bg-yellow-700/80 rounded-2xl duration-200">About Us</a>
+                            </li>
+                            <li class="group">
+                                <a href="./testimonials.html" class="text-base text-yellow-800/70 py-1 px-2 mx-6 flex group-hover:text-amber-100 group-hover:bg-yellow-700/80 rounded-2xl duration-200">Testimonials</a>
+                            </li>
+                            <li class="group">
+                                <a href="./faq.html" class="text-base text-yellow-800/70 py-1 px-2 mx-6 flex group-hover:text-amber-100 group-hover:bg-yellow-700/80 rounded-2xl duration-200">FAQ</a>
+                            </li>
+                            <li class="group">
+                                <a href="./contact-and-location.html" class="text-base text-yellow-800/70 py-1 px-2 mx-6 flex group-hover:text-amber-100 group-hover:bg-yellow-700/80 rounded-2xl duration-200">Contact & Location</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <section class="pt-32 pb-16 px-4 sm:px-40">
+        <div class="container mx-auto">
+            <div class="w-full px-4 text-center pb-10 relative">
+                <span class="bg-yellow-800/70 h-[1px] px-[200px] absolute left-0 top-6"></span>
+                <h1 class="text-4xl text-yellow-800/70 font-bold lg:text-5xl">Our Products</h1>
+            </div>
+            <div class="w-full flex gap-5 items-center border-y p-2 border-yellow-800/70 mb-5">
+                <div class="relative" id="dropdownWrapper">
+                    <button id="dropdownButton" class="flex items-center justify-between bg-amber-100 text-yellow-800/70 px-4 py-2 rounded-md hover:bg-amber-100/90 w-48">
+                        <span>Pilih Kategori</span>
+                        <svg id="iconRight" class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                        <svg id="iconDown" class="w-4 h-4 ml-2 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <ul id="dropdownMenu" class="absolute hidden bg-amber-100 border mt-4 rounded-md border-yellow-800/70 shadow-md w-48 z-10">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 border-b border-yellow-800/70">Teknologi</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 border-b border-yellow-800/70">Pendidikan</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 border-b border-yellow-800/70">Kesehatan</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 border-b border-yellow-800/70">Olahraga</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 border-b border-yellow-800/70">Keuangan</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Keuangan</a></li>
+                    </ul>
+                </div>
+                <div class="w-full flex items-center space-x-4 border-l border-yellow-800/70 px-4 py-2">
+                    <div id="carousel" class="flex space-x-3 overflow-hidden w-[900px]"></div>
+                    <button id="nextBtn" class="text-yellow-800/70 hover:text-yellow-800/60 bg-amber-100 shadow-md rounded-full p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="w-full flex justify-center relative mb-5">
+                <form action="" method="post" class="w-full flex items-center relative px-5">
+                    <i class="bi bi-search absolute left-8 text-gray-500"></i>
+                    <input type="text" placeholder="Search"
+                    class="pl-12 h-10 w-full bg-[#f0f0f0] text-[#333] rounded border-none">
+                </form>
+            </div>
+
+
+            <div class="flex flex-wrap mb-5">
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='../includes/product-detail.html'" style="cursor: pointer;">
+                    <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
+                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
+                        <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
+                        <div class="w-full flex">
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='../includes/product-detail.html'" style="cursor: pointer;">
+                    <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
+                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
+                        <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
+                        <div class="w-full flex">
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='../includes/product-detail.html'" style="cursor: pointer;">
+                    <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
+                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
+                        <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
+                        <div class="w-full flex">
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='../includes/product-detail.html'" style="cursor: pointer;">
+                    <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
+                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
+                        <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
+                        <div class="w-full flex">
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='../includes/product-detail.html'" style="cursor: pointer;">
+                    <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
+                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
+                        <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
+                        <div class="w-full flex">
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='../includes/product-detail.html'" style="cursor: pointer;">
+                    <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
+                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
+                        <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
+                        <div class="w-full flex">
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='../includes/product-detail.html'" style="cursor: pointer;">
+                    <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
+                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
+                        <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
+                        <div class="w-full flex">
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='../includes/product-detail.html'" style="cursor: pointer;">
+                    <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
+                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
+                        <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
+                        <div class="w-full flex">
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='../includes/product-detail.html'" style="cursor: pointer;">
+                    <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
+                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
+                        <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
+                        <div class="w-full flex">
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-1/2 lg:w-1/5 px-2" onclick="window.location.href='../includes/product-detail.html'" style="cursor: pointer;">
+                    <div class="overflow-hidden p-4  shadow-lg rounded-lg mb-4 bg-amber-100">
+                        <img src="../images/insertpichere.jpg" alt="" class="mb-4 rounded-lg">
+                        <h3 class="text-lg font-sm lg:text-2xl mb-1 truncate">Nama Produk</h3>
+                        <p class="font-bold text-sm lg:text-base mb-5">Rp 00.000</p>
+                        <div class="w-full flex">
+                            <a href="#" class="py-2 text-center text-white w-full bg-yellow-800/70 text-sm lg:text-base rounded-lg hover:shadow-lg hover:opacity-90 font-bold ">Beli!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <div class="flex items-center justify-center mt-5">
+                <p class="mr-2">1/4</p>
+                <button class="w-11 h-9 bg-[#F5F5DC] rounded-l"><i class="bi bi-caret-left"></i></button>
+                <button class="w-11 h-9 bg-yellow-700/80 text-white shadow-md rounded ml-1"><i class="bi bi-caret-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Start -->
+    <footer class="bg-yellow-800/70 pt-10 pb-4 px-4 lg:px-20">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap md:mx-auto">
+                <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-full lg:mb-5">
+                    <h2 class="font-bold text-4xl text-white mb-3">Shofi Frozen</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio a fugiat harum placeat, autem quod.</p>
+                    <p>Jl. Pahlawan No.25-27, Cileungsi, Kec. Cileungsi,</p>
+                    <p> Kabupaten Bogor, Jawa Barat 16820</p>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/3 lg:mb-15">
+                    <h3 class="font-semibold text-xl text-white mb-5">Links</h3>
+                    <ul class="text-slate-300">
+                        <li><a href="#home" class="inline-block text-base hover:text-violet-500 mb-2 lg:text-sm">Best Seller</a></li>
+                        <li><a href="#about" class="inline-block text-base hover:text-violet-500 mb-2 lg:text-sm">Our Products</a></li>
+                        <li><a href="#contact" class="inline-block text-base hover:text-violet-500 mb-2 lg:text-sm">About Us</a></li>
+                        <li><a href="#contact" class="inline-block text-base hover:text-violet-500 mb-2 lg:text-sm">Testimonials</a></li>
+                        <li><a href="#contact" class="inline-block text-base hover:text-violet-500 mb-2 lg:text-sm">FAQ</a></li>
+                        <li><a href="#contact" class="inline-block text-base hover:text-violet-500 mb-2 lg:text-sm">Contact & Location</a></li>
+                    </ul>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/3 lg:mb-2">
+                    <h3 class="font-semibold text-xl text-white mb-5">Marketplace</h3>
+                    <ul class="">
+                        <li><a href="#" class="inline-block mb-3">
+                            <img src="../images/shopee-seeklogo-1.png" alt="" class="w-[120px] grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-300">
+                        </a></li>
+                        <li><a href="#" class="inline-block mb-3">
+                            <img src="../images/tokopedia.png" alt="" class="w-[120px] grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-300">
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/3 lg:mb-15">
+                    <h3 class="font-semibold text-xl text-white mb-5">Services</h3>
+                    <ul class="text-slate-300">
+                        <li><a href="#home" class="inline-block text-base hover:text-violet-500 mb-2 lg:text-sm">Support</a></li>
+                        <li><a href="#about" class="inline-block text-base hover:text-violet-500 mb-2 lg:text-sm">Privacy</a></li>
+                        <li><a href="#contact" class="inline-block text-base hover:text-violet-500 mb-2 lg:text-sm">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full pt-5 border-t border-amber-100">
+                <div class="flex items-center justify-center mb-5">
+                    
+                    <!-- Instagram -->
+                    <!-- target blank untuk agar membuka tab baru -->
+                    <a href="#" target="_blank" class="w-7 h-7 mr-3 rounded-full flex justify-center items-center text-slate-300 border border-slate-300 hover:border-violet-500 hover:bg-violet-500 hover:text-white">
+                        <!-- fill-current agar si svg atau icon menyesuaikan dgn warna textnya -->
+                        <svg role="img" width="15" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <title>Instagram</title>
+                            <path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/>
+                        </svg>
+                    </a>
+                    
+                    <!-- WhatsApp -->
+                    <!-- target blank untuk agar membuka tab baru -->
+                    <a href="#" target="_blank" class="w-7 h-7 mr-3 rounded-full flex justify-center items-center text-slate-300 border border-slate-300 hover:border-violet-500 hover:bg-violet-500 hover:text-white">
+                        <!-- fill-current agar si svg atau icon menyesuaikan dgn warna textnya -->
+                        <svg role="img" width="15" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <title>WhatsApp</title>
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                    </a>
+                    
+                    
+                    <!-- Email -->
+                    <!-- target blank untuk agar membuka tab baru -->
+                    <a href="#" target="_blank" class="w-7 h-7 mr-3 rounded-full flex justify-center items-center text-slate-300 border border-slate-300 hover:border-violet-500 hover:bg-violet-500 hover:text-white">
+                        <!-- fill-current agar si svg atau icon menyesuaikan dgn warna textnya -->
+                        <svg role="img" width="15" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <title>Gmail</title>
+                            <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+                        </svg>
+                    </a>
+                </div>
+                <p class="font-medium text-xs text-slate-300 text-center">Made by <a href="#" target="_blank" class="font-bold text-amber-500">Hammad</a> with <a href="https://tailwindcss.com/" target="_blank" class="font-bold text-sky-500">Tailwind CSS</a>.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script>
+        // navbar fixed start
+        window.onscroll = function() {
+            const header = document.querySelector('header');
+            const fixedNav = header.offsetTop;
+
+            if(window.pageYOffset > fixedNav) {
+                header.classList.add('navbar-fixed');
+            } else {
+                header.classList.remove('navbar-fixed');
+            }
+        }
+        // navbar fixed end
+
+        // hamburger start
+        const hamburger = document.querySelector('#hamburger')
+        const navMenu = document.querySelector('#nav-menu')
+
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('hamburger-active');
+            navMenu.classList.toggle('hidden')
+        })
+
+        const btn = document.getElementById("dropdownButton");
+        const menu = document.getElementById("dropdownMenu");
+        const iconRight = document.getElementById("iconRight");
+        const iconDown = document.getElementById("iconDown");
+        // hamburger end
+
+        // kategori start
+        btn.addEventListener("click", function () {
+            menu.classList.toggle("hidden");
+            iconRight.classList.toggle("hidden");
+            iconDown.classList.toggle("hidden");
+        });
+
+        document.addEventListener("click", function (e) {
+            const wrapper = document.getElementById("dropdownWrapper");
+            
+            if (!wrapper.contains(e.target)) {
+                menu.classList.add("hidden");
+                iconRight.classList.remove("hidden");
+                iconDown.classList.add("hidden");
+            }
+        });
+        // kategori end
+
+        // slider text start
+        const categories = [
+                    "Apple", "Samsung", "Oppo", "Xiaomi", "Huawei", "Motorola", "Realme", "Vivo", "Apple", "Samsung", "Oppo", "Xiaomi", "Huawei", "Motorola", "Realme", "Vivo"
+                ];
+
+                let startIndex = 0;
+                const visibleCount = 12;
+
+                const carousel = document.getElementById("carousel");
+                const nextBtn = document.getElementById("nextBtn");
+
+                function renderCarousel() {
+                    carousel.innerHTML = "";
+                    const endIndex = startIndex + visibleCount;
+                    const visibleItems = categories.slice(startIndex, endIndex);
+
+                    visibleItems.forEach(cat => {
+                        const link = document.createElement("a");
+                        link.href = "#";
+                        link.className = "px-3 py-1 bg-amber-100 text-yellow-800/70 rounded-md hover:bg-yellow-700/80 hover:text-amber-100 duration-200";
+                        link.textContent = cat;
+                        carousel.appendChild(link);
+                    });
+                }
+
+                nextBtn.addEventListener("click", () => {
+                    startIndex = (startIndex + 1) % categories.length;
+
+                    if (startIndex + visibleCount > categories.length) {
+                        startIndex = 0;
+                    }
+                    
+                    renderCarousel();
+                });
+
+                renderCarousel();
+        // slider text end
+
+    </script>
+</body>
+</html>
